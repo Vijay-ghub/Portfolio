@@ -412,3 +412,15 @@ img,svg,video,canvas{max-width:100%}
 .about-roles .fact span{font-size:9px;line-height:1.35;display:block;margin-top:6px}
 @media(max-width:900px){.about-roles{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:520px){.about-roles{grid-template-columns:repeat(2,minmax(0,1fr))}.about-roles .fact strong{font-size:13px}}
+
+.visual-game {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

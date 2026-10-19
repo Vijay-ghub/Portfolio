@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101112" id="themeColorMeta">
+<meta name="description" content="Vijayakumar — Business Development Executive, XR Researcher, Game Developer and UI/UX Designer.">
+<title>Vijayakumar — Game & XR Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient-scene" aria-hidden="true">
+  <canvas class="game-particles" id="gameParticles"></canvas>
+  <div class="ambient-grid"></div>
+  <div class="ambient-glow glow-a"></div><div class="ambient-glow glow-b"></div>
+  <div class="hud-ring hud-ring-one"></div><div class="hud-ring hud-ring-two"></div>
+  <div class="hud-scanline"></div>
+  <span class="scene-node node-a"></span><span class="scene-node node-b"></span><span class="scene-node node-c"></span><span class="scene-node node-d"></span>
+  <span class="scene-cross cross-a">+</span><span class="scene-cross cross-b">+</span>
+</div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div><div class="cursor-glow" aria-hidden="true"></div><div class="custom-cursor" id="customCursor" aria-hidden="true"></div><div class="custom-cursor-ring" id="customCursorRing" aria-hidden="true"></div>
+<header class="topbar">
+  <div class="wrap navrow">
+    <a class="brand brand-wordmark" href="#home" aria-label="V. Vijayakumar home"><span>V<span class="accent">IJAY</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <div class="nav-right">
+    <nav class="nav" id="nav">
+      <a href="#home" class="active">Home</a><a href="#about">About</a><a href="#services">What I do</a><a href="#work">Portfolio</a><a href="#resume">Resume</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="appearance-tools" aria-label="Appearance controls">
+      <button class="appearance-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Toggle dark and light theme"><span id="themeIcon">☼</span><span class="toggle-label">Theme</span></button>
+      <div class="palette-menu" id="paletteMenu">
+        <button class="palette-trigger" id="paletteTrigger" type="button" aria-expanded="false" aria-controls="paletteOptions"><span class="palette-current" id="paletteCurrent"></span><span>Color</span><span class="palette-chevron">⌄</span></button>
+        <div class="palette-options" id="paletteOptions" role="group" aria-label="Choose accent colour" hidden>
+          <button class="palette-option active" type="button" data-accent="#c8ff42" aria-pressed="true"><span class="palette-dot" style="--swatch:#c8ff42"></span>Lime</button>
+          <button class="palette-option" type="button" data-accent="#55d6ff" aria-pressed="false"><span class="palette-dot" style="--swatch:#55d6ff"></span>Cyan</button>
+          <button class="palette-option" type="button" data-accent="#b69cff" aria-pressed="false"><span class="palette-dot" style="--swatch:#b69cff"></span>Violet</button>
+          <button class="palette-option" type="button" data-accent="#ff8b62" aria-pressed="false"><span class="palette-dot" style="--swatch:#ff8b62"></span>Orange</button>
+        </div>
+      </div>
+      <a class="nav-cta" href="#contact">Let's talk <span class="accent">↗</span></a>
+    </div>
+    </div>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div class="hero-content">
+    <div class="eyebrow">GAME DEV · XR WORLDS · INTERACTIVE TECH</div>
+    <h1 class="hero-title"><span class="hero-intro">Hi, I'm Vijayakumar</span><span class="hero-role-line"><span id="typedRole" aria-live="polite">Game Developer</span><span class="typing-caret" aria-hidden="true"></span></span></h1>
+    <p class="hero-copy"><span class="hero-copy-line">I build playable worlds, immersive XR experiences, and intuitive interfaces,</span> <span class="hero-copy-line">blending gameplay systems, creative technology, and UI/UX to turn ideas into interactive experiences.</span></p>
+    <div class="hero-actions"><a class="button primary" href="#work">Enter the portfolio <span>↗</span></a><a class="button" href="#about">Player profile <span>↓</span></a></div>
+    <div class="socials"><a href="#contact">Get in touch ↗</a><a href="#work">Selected projects ↗</a><span class="mono muted">Based in India</span></div>
+  </div>
+  <div class="hero-art" aria-label="Vijayakumar portrait">
+    <div class="orbit"><span class="orbit-dot"></span></div>
+    <div class="portrait-card"><img class="portrait-photo" src="assets\Vijay (2).jpeg" alt="Portrait of Vijayakumar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" /><div class="photo-placeholder" aria-hidden="true"><span>ADD YOUR PHOTO</span><small>assets/vijayakumar-photo.jpg</small></div></div>
+    <div class="float-label float-one"><span class="float-dot"></span><strong>Immersive by design</strong><span class="muted">XR / AR / VR</span></div>
+    <div class="float-label float-two"><strong>Creative + technical</strong><span class="muted">From concept to build</span></div>
+  </div>
+</div></section>
+<section class="section" id="about"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">A little introduction</div><h2>Curiosity is my<br>creative engine.</h2></div><p>I work at the intersection of technology, design, and play — turning complex ideas into experiences people can understand, explore, and enjoy.</p></div>
+  <div class="about-grid">
+    <div class="about-stamp reveal"><div class="stamp-circle">✳</div><div><div class="mono accent">My approach</div><div class="quote">“Make technology feel <span class="accent">natural</span>, useful, and a little magical.”</div></div><div class="mono muted">DESIGN · BUILD · ITERATE</div></div>
+    <div class="about-copy reveal"><h3>Business development. XR research. Interactive technology.</h3><p>I bring together business development and technology, with an M.Sc. in Computer Science and experience across XR development, UI/UX design, and interactive projects. As a Business Development Executive, I focus on lead generation, prospect research, outreach, and building meaningful client relationships.</p><p>Alongside business development, I explore XR and AI research, immersive applications, and human-centred digital experiences. My background includes XR work with Xeroscape Realities, an IIT Madras-incubated startup, plus independent game development and interface design.</p>
+    <div class="facts about-roles"><div class="fact"><strong>Game Developer</strong><span>Gameplay & prototypes</span></div><div class="fact"><strong>XR Developer</strong><span>AR / VR experiences</span></div><div class="fact"><strong>UI/UX Designer</strong><span>Human-centred design</span></div><div class="fact"><strong>XR + AI Researcher</strong><span>Applied research</span></div><div class="fact"><strong>BDE</strong><span> Business development US CLients </span></div></div></div>
+  </div>
+</div></section>
+<section class="section" id="services"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">What I bring</div><h2>Ideas into experiences.</h2></div><p>Flexible across disciplines, from shaping the first interaction to building and polishing a working prototype.</p></div>
+  <div class="services">
+    <article class="service reveal"><div class="service-icon">⌘</div><h3>XR Development</h3><p>AR and VR applications, spatial interactions, immersive prototypes, and real-world overlays built around user needs.</p><span class="tag">Unity · AR Foundation · Vuforia</span></article>
+    <article class="service reveal"><div class="service-icon">◈</div><h3>Game Development</h3><p>Gameplay systems, interactive mechanics, level concepts, prototyping, and hands-on iteration from a player's perspective.</p><span class="tag">Unity · C# · Unreal Engine</span></article>
+    <article class="service reveal"><div class="service-icon">▦</div><h3>UI/UX Design</h3><p>Clear flows, wireframes, interface layouts, and visual systems that make digital products easier to understand and use.</p><span class="tag">User flows · Prototyping</span></article>
+    <article class="service reveal"><div class="service-icon">〈/〉</div><h3>Frontend Development</h3><p>Responsive web interfaces that balance visual polish, accessible structure, and practical functionality.</p><span class="tag">HTML · CSS · JavaScript</span></article>
+    <article class="service reveal"><div class="service-icon">✳</div><h3>AI & Interactive Research</h3><p>Exploring AI-assisted experiences, computer vision concepts, and data-driven systems for immersive applications.</p><span class="tag">Python · TensorFlow · PyTorch</span></article>
+    <article class="service reveal"><div class="service-icon">◎</div><h3>Creative Prototyping</h3><p>Turning early ideas into testable demos, combining interaction design, 3D assets, and rapid development.</p><span class="tag">Concept → Prototype</span></article>
+    <article class="service reveal"><div class="service-icon">↗</div><h3>BDE & Lead Generation</h3><p>Prospect research, lead generation, outreach, CRM updates, and relationship-building to support business growth.</p><span class="tag">CRM · Prospecting · Lead generation</span></article>
+  </div>
+</div></section>
+<section class="section" id="work"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">Selected concepts & projects</div><h2>Work that explores<br>what's possible.</h2></div><p>A selection of project areas based on my development interests. Replace or link these cards to published builds, videos, repositories, and case studies.</p></div>
+  <div class="filters reveal" role="group" aria-label="Filter projects"><button class="filter active" data-filter="all">All projects</button><button class="filter" data-filter="xr">XR / AR / VR</button><button class="filter" data-filter="game">Game dev</button><button class="filter" data-filter="design">UI/UX</button><button class="filter" data-filter="ai">AI / Research</button><button class="filter" data-filter="bde">BDE</button></div>
+  <div class="projects">
+    <article class="project reveal" data-category="xr" data-project-url="" data-source-url=""><div class="project-visual visual-xr"><span class="project-number mono">PROJECT / 01</span><div class="cube"></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>AR Learning Experiences for Kids</h3><p>An educational AR experience with animated characters, learning activities, level navigation, and audio-led interactions.</p><div class="project-tags"><span class="tag-chip">Unity</span><span class="tag-chip">AR Foundation</span><span class="tag-chip">Interaction Design</span></div></div></article>
+    <article class="project reveal" data-category="xr" data-project-url="" data-source-url=""><div class="project-visual visual-xr"><span class="project-number mono">PROJECT / 02</span><div class="cube"></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>XR-Assisted Asset Monitoring</h3><p>An immersive monitoring concept that presents asset information and inspection cues through an XR interface.</p><div class="project-tags"><span class="tag-chip">Unity</span><span class="tag-chip">XR Interface</span><span class="tag-chip">Digital Twin</span></div></div></article>
+   <article
+  class="project reveal"
+  data-category="game"
+  data-project-url="https://vijay-ghub.github.io/KART-RACE/"
+  data-source-url=""
+  onclick="if (this.dataset.projectUrl) window.open(this.dataset.projectUrl, '_blank', 'noopener,noreferrer')"
+  style="cursor: pointer;"
+>
+  <div class="project-visual visual-game project-visual-image">
+    <span class="project-number mono">PROJECT / 03</span>
+    <img
+      src="./Kart%20Race_%20Drift%20to%20Win.png"
+      alt="Kart Racing Prototype gameplay"
+      class="project-thumbnail"
+      loading="lazy"
+    />
+    <span class="project-arrow">↗</span>
+  </div>
+  <div class="project-info">
+    <h3>Kart Racing Prototype</h3>
+    <p>A compact kart-racing game focused on responsive driving, track navigation, and a polished race loop.</p>
+    <div class="project-tags">
+      <span class="tag-chip">Unity</span>
+      <span class="tag-chip">C#</span>
+      <span class="tag-chip">Racing Game</span>
+    </div>
+  </div>
+</article>
+    <article class="project reveal" data-category="game" data-project-url="" data-source-url=""><div class="project-visual visual-game"><span class="project-number mono">PROJECT / 04</span><div class="gamepad">⌁</div><span class="project-arrow">↗</span></div><div class="project-info"><h3>Jungle Clasher</h3><p>A game prototype exploring action gameplay, player feedback, and a clear visual identity.</p><div class="project-tags"><span class="tag-chip">Unity</span><span class="tag-chip">Gameplay</span><span class="tag-chip">Prototyping</span></div></div></article>
+    <article class="project reveal" data-category="game" data-project-url="" data-source-url=""><div class="project-visual visual-game"><span class="project-number mono">PROJECT / 05</span><div class="gamepad">⌁</div><span class="project-arrow">↗</span></div><div class="project-info"><h3>Independent Game Prototypes</h3><p>Playable experiments focused on controls, level flow, collision handling, and moment-to-moment game feel.</p><div class="project-tags"><span class="tag-chip">Game Design</span><span class="tag-chip">C#</span><span class="tag-chip">Unity</span></div></div></article>
+    <article class="project reveal" data-category="design" data-project-url="" data-source-url=""><div class="project-visual visual-ui"><span class="project-number mono">PROJECT / 06</span><div class="ui-window"><div class="ui-bar"></div><div class="ui-tiles"><i></i><i></i><i></i><i></i></div></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>UI/UX for Interactive Products</h3><p>Interface explorations translating user needs into clear layouts, intuitive flows, and a consistent visual language.</p><div class="project-tags"><span class="tag-chip">UI/UX</span><span class="tag-chip">Wireframes</span><span class="tag-chip">Prototyping</span></div></div></article>
+    <article class="project reveal" data-category="design" data-project-url="" data-source-url=""><div class="project-visual visual-ui"><span class="project-number mono">PROJECT / 07</span><div class="ui-window"><div class="ui-bar"></div><div class="ui-tiles"><i></i><i></i><i></i><i></i></div></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>Portfolio Website Design</h3><p>A responsive personal portfolio with a dark visual system, interactive details, and responsive layouts.</p><div class="project-tags"><span class="tag-chip">Figma</span><span class="tag-chip">Web Design</span><span class="tag-chip">Responsive UI</span></div></div></article>
+    <article class="project reveal" data-category="design" data-project-url="" data-source-url=""><div class="project-visual visual-ui"><span class="project-number mono">PROJECT / 08</span><div class="ui-window"><div class="ui-bar"></div><div class="ui-tiles"><i></i><i></i><i></i><i></i></div></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>Mobile App Interface Concepts</h3><p>Mobile-first screens and user flows designed to make core tasks simple, accessible, and consistent.</p><div class="project-tags"><span class="tag-chip">User Flows</span><span class="tag-chip">UI Systems</span><span class="tag-chip">Prototyping</span></div></div></article>
+    <article class="project reveal" data-category="ai" data-project-url="" data-source-url=""><div class="project-visual visual-ai"><span class="project-number mono">PROJECT / 09</span><div class="ai-orb"></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>AI + XR Research Concepts</h3><p>Exploring how computer vision and intelligent systems can support immersive monitoring, interactive learning, and real-time decisions.</p><div class="project-tags"><span class="tag-chip">Python</span><span class="tag-chip">Computer Vision</span><span class="tag-chip">XR</span></div></div></article>
+    <article class="project reveal" data-category="bde" data-project-url="" data-source-url=""><div class="project-visual visual-ai"><span class="project-number mono">PROJECT / 10</span><div class="ai-orb"></div><span class="project-arrow">↗</span></div><div class="project-info"><h3>BDE Lead Generation Workflow</h3><p>A business development workflow for prospect research, lead qualification, outreach tracking, and CRM follow-up.</p><div class="project-tags"><span class="tag-chip">Lead Generation</span><span class="tag-chip">Prospect Research</span><span class="tag-chip">CRM</span></div></div></article>
+  </div>
+</div></section>
+<section class="section" id="resume"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">The journey so far</div><h2>Experience & education.</h2></div><p>A blend of computer science foundations, practical XR work, and self-driven creative development.</p></div>
+  <div class="resume-grid">
+    <div class="resume-col reveal"><h3>Experience</h3><div class="timeline">
+      <div class="timeline-item"><div class="date">Business development</div><h4>Business Development Executive (BDE)</h4><div class="place">Lead generation & client outreach</div><p>Focus areas include researching prospects, qualifying leads, maintaining CRM records, and supporting business growth.</p></div>
+      <div class="timeline-item"><div class="date">XR & AI research</div><h4>XR Researcher</h4><div class="place">Immersive technology and applied AI</div><p>Exploring XR experiences and AI-supported interactive systems, including concepts in computer vision and real-time monitoring.</p></div>
+      <div class="timeline-item"><div class="date">Design experience</div><h4>UI/UX Designer</h4><div class="place">Interactive products and applications</div><p>Designing user flows, interface layouts, and accessible interactions for digital and immersive experiences.</p></div>
+      <div class="timeline-item"><div class="date">XR development</div><h4>XR Developer</h4><div class="place">Xeroscape Realities · IIT Madras-incubated startup</div><p>Developing immersive AR/VR experiences and interactive prototypes, with attention to spatial interactions, usability, and real-time performance.</p></div>
+      <div class="timeline-item"><div class="date">Independent practice</div><h4>Independent Game Developer</h4><div class="place">Personal projects & prototypes</div><p>Building and testing game ideas, gameplay systems, and interactive prototypes.</p></div>
+    </div></div>
+    <div class="resume-col reveal"><h3>Education</h3><div class="timeline">
+      <div class="timeline-item"><div class="date">2019 — 2022</div><h4>B.Sc. Computer Science</h4><div class="place">Bachelor’s degree</div><p>Undergraduate foundation in computer science, programming, and computing principles.</p></div>
+      <div class="timeline-item"><div class="date">2022 — 2024</div><h4>M.Sc. Computer Science</h4><div class="place">Periyar University · Salem, Tamil Nadu</div><p>Postgraduate degree in computer science, building a foundation in computing, software development, and applied technology.</p></div>
+    </div></div>
+    <div class="resume-col reveal toolkit-col"><h3>Technical toolkit</h3><div class="skills-grid">
+      <div class="skill"><b>01</b> Unity</div><div class="skill"><b>02</b> C#</div><div class="skill"><b>03</b> Unreal</div><div class="skill"><b>04</b> AR / VR</div><div class="skill"><b>05</b> Vuforia</div><div class="skill"><b>06</b> C++</div><div class="skill"><b>07</b> Python</div><div class="skill"><b>08</b> HTML/CSS</div><div class="skill"><b>09</b> JavaScript</div><div class="skill"><b>10</b> UI/UX</div><div class="skill"><b>11</b> TensorFlow</div><div class="skill"><b>12</b> Git basics</div><div class="skill"><b>13</b> CRM tools</div><div class="skill"><b>14</b> Lead generation</div><div class="skill"><b>15</b> Prospect research</div>
+    </div></div>
+  </div>
+ <div class="resume-download reveal">
+  <button class="button primary" type="button">
+    Download Resume <span>↓</span>
+  </button>
+</div>
+</div></section>
+<section class="section" id="contact"><div class="wrap contact-grid">
+  <div class="contact-copy reveal"><div class="eyebrow">Have a project in mind?</div><h2>Let's make something <span class="accent">meaningful.</span></h2><p>Open to opportunities in game development, XR development, UI/UX design, XR + AI research, and business development. Tell me what you're building.</p><div class="contact-detail"><div><span>Email</span><a href="mailto:venkatvijay6789@gmail.com" id="emailLink">venkatvijay6789@gmail.com</a></div><div><span>Location</span>India · Open to remote opportunities</div><div><span></span></div><div><span>Connect</span><a href="https://www.linkedin.com/in/vijayakumar-v-81b284235/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div></div>
+  <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/venkatvijay6789@gmail.com" method="POST" accept-charset="UTF-8">
+    <input type="hidden" name="_subject" id="formEmailSubject" value="New portfolio contact message">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Name" minlength="2" maxlength="60" autocomplete="name" required></div>
+    <div class="field"><label for="email">Your email</label><input id="email" name="email" type="email" placeholder="name@example.com" maxlength="254" autocomplete="email" required></div>
+    <div class="field full"><label for="subject">Subject</label><input id="subject" name="contact_subject" type="text" placeholder="Project / opportunity" minlength="3" maxlength="80" required></div>
+    <div class="field full"><label for="message">Message <span class="message-count" id="messageCount">0/180</span></label><textarea id="message" name="message" placeholder="A little about what you have in mind..." minlength="5" maxlength="180" rows="4" aria-describedby="messageHelp messageCount" required></textarea><small class="field-help" id="messageHelp">Maximum 180 characters. Links and website addresses are not allowed.</small></div>
+    <button class="button primary" id="contactSubmit" type="submit">Send message <span>↗</span></button>
+    <p class="form-note" id="formNote" role="status" aria-live="polite">Messages are checked for links and spam. Your email app is not required.</p>
+  </form>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><span>© <span id="year"></span> <strong class="footer-name">Vijayakumar</strong>. Crafted with curiosity.</span><span class="mono">XR · GAMES · DIGITAL EXPERIENCES · BUSINESS DEVELOPMENT </span><a class="backtop" href="#home">Back to top ↑</a></div></footer>
+
+<div class="project-modal" id="projectModal" hidden role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+  <div class="project-modal-panel" role="document">
+    <button class="project-modal-close" id="projectModalClose" type="button" aria-label="Close project details">×</button>
+    <div class="project-modal-preview" id="projectModalPreview"></div>
+    <div class="project-modal-body">
+      <div class="project-modal-kicker" id="projectModalKicker">PROJECT DETAILS</div>
+      <h2 id="projectModalTitle"></h2>
+      <p class="project-modal-description" id="projectModalDescription"></p>
+      <div class="project-modal-tags" id="projectModalTags"></div>
+      <div class="project-modal-actions">
+        <a class="button primary" id="projectDemoLink" href="#" target="_blank" rel="noopener noreferrer" hidden>Open Project ↗</a>
+        <a class="button" id="projectSourceLink" href="#" target="_blank" rel="noopener noreferrer" hidden>View Source Code ↗</a>
+      </div>
+      <p class="project-modal-note" id="projectModalNote">Add the real project or repository URL in this card’s data-project-url or data-source-url attribute to enable redirection.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>

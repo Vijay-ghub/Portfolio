@@ -1,3 +1,0 @@
-The hero portrait now uses the supplied transparent PNG directly.
-The previous procedural 3D/Three.js avatar display has been removed.
-Image: assets/vijayakumar-anime-portrait.png
